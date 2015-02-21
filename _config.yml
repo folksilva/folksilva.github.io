@@ -1,0 +1,13 @@
+# Site settings
+title: Luiz Silva Blog
+email: folksilva@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Apresentações e curiosidades sobre o mundo da tecnologia
+  e da ciência.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: folksilva
+github_username:  folksilva
+
+# Build settings
+markdown: kramdown
