@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: Sobre
+  url: /about/
+
+- title: Artigos & Apresentações
+  url: /articles/
+
+- title: Busca
+  url: /search/
