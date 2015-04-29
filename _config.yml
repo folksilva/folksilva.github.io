@@ -5,7 +5,8 @@ locale: pt_BR
 description: Viagens de um desenvolvedor
 logo: site-logo.png
 search: true
-url: //folksilva.github.io
+#url: //folksilva.github.io
+url:
 
 # Jekyll configuration
 
