@@ -11,6 +11,7 @@ tags: [
 ]
 image:
   feature: "ZerandoJogo/ZerandoJogo-0.jpg"
+  thumb: "ZerandoJogo/ZerandoJogoThumb.png"
 date: 2015-05-13T19:25:04+00:00
 comments: true
 share: true
