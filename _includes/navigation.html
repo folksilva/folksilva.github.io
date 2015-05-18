@@ -1,3 +1,26 @@
+<!-- Google Plus -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'pt-BR'}
+</script><!-- /Google Plus -->
+<!-- Facebook -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '978985098786765',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script><!-- /Facebook -->
+
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
 	    <ul>
