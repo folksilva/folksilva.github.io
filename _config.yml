@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Folkblog
+title: Luiz Explica
 locale: pt_BR
-description: Viagens de um desenvolvedor
+description: Aprendizado, Desenvolvimento e Produtividade de um jeito fácil.
 logo: site-logo.png
 search: true
 #url: //folksilva.github.io
@@ -32,7 +32,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Luiz Silva
+  name: Luiz Fernando
   avatar: bio-photo.png
   email: folksilva@gmail.com
   disqus-shortname: folksilva

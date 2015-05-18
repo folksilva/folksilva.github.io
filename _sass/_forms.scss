@@ -251,3 +251,23 @@ select:focus {
 	/* submit button */
 	#goog-wm-sb {}
 }
+
+// Mailchimp
+// --------------------------------------------------
+
+@import "//cdn-images.mailchimp.com/embedcode/slim-081711.css";
+
+#mc_embed_signup {
+	background:#222; 
+	clear:left; 
+	color: white;
+	input.email, input.button {
+		display: inline-block;
+	}
+	input.button {
+	  height: 39px;
+	}
+}
+#mc_embed_signup_scroll label {
+	color: white;
+}
