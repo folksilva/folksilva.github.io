@@ -18,9 +18,6 @@ share: true
 published: true
 ---
 
-<iframe src="https://www.slideshare.net/slideshow/embed_code/key/yXscwNp2ZETiQo"
-  width="560" height="430" frameborder="0" marginwidth="0" marginheight="0" 
-  scrolling="no"></iframe>
 
 Olá pessoal!
 
@@ -30,6 +27,10 @@ demonstrar como ela pode ser usada no mundo do futebol para ajudar na busca de
 melhores resultados.
 
 Se não pôde participar do Devcamp veja agora uma transcrição da apresentação.
+
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/yXscwNp2ZETiQo"
+  width="560" height="430" frameborder="0" marginwidth="0" marginheight="0" 
+  scrolling="no"></iframe>
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">

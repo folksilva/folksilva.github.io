@@ -27,7 +27,7 @@ $('#site-nav').click(function(event){
 
 // FitVids options
 $(function() {
-	$("article").fitVids();
+	$("article").fitVids({customSelector: 'iframe[src*=\'ted.com\'], iframe[src*=\'slideshare.net\']'});
 });
 
 // Add lightbox class to all image links
