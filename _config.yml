@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: Luiz Explica
+title: Luiz Folksilva
 locale: pt_BR
 description: Aprendizado, Desenvolvimento e Produtividade de um jeito fácil.
 logo: site-logo.png
@@ -32,7 +32,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Luiz Fernando
+  name: Luiz Folksilva
   avatar: bio-photo.png
   email: folksilva@gmail.com
   disqus-shortname: folksilva
