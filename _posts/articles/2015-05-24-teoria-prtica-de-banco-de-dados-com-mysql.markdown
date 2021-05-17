@@ -16,12 +16,12 @@ image:
 date: 2015-05-24T17:05:51+00:00
 comments: true
 share: true
-published: true
+published: false
 ---
 
 Olá pessoal!
 
-Talvez você esteja cursando uma graduação em sistemas de informação, ciência da 
+Talvez você esteja cursando uma graduação em sistemas de informação, ciência da
 computação ou seja um curioso do mundo da tecnologia, assim como eu. Uma das primeiras
 coisas que precisamos aprender é como armazenar e acessar dados, afinal esse é o
 principal objetivo da **Tecnologia da Informação**.
@@ -32,9 +32,9 @@ principais bancos de dados do mundo e que você pode começar a usar agora sem g
 
 Veja abaixo os slides e uma descrição completa.
 
-<iframe src="//pt.slideshare.net/slideshow/embed_code/key/oWgAzA9XbmYM8" 
-width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" 
-style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" 
+<iframe src="//pt.slideshare.net/slideshow/embed_code/key/oWgAzA9XbmYM8"
+width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
 allowfullscreen></iframe>
 
 <!-- Begin MailChimp Signup Form -->
@@ -59,29 +59,29 @@ allowfullscreen></iframe>
 
 ![Introdução]({{site.url}}/images/MySQL/MySQL-1.jpg)
 
-Pra começar vamos ver um pouquinho da história dos bancos de dados e já vamos 
+Pra começar vamos ver um pouquinho da história dos bancos de dados e já vamos
 partir pra prática que é o que interessa.
 
-A ideia original com a apresentação era que cada um instalasse o MySQL e uma 
-ferramenta de auxílio chamada MySQL Workbench, essa ferramenta facilita o acesso 
-e a manutenção do banco de dados. Você pode instalar o MySQL Workbench nesse 
+A ideia original com a apresentação era que cada um instalasse o MySQL e uma
+ferramenta de auxílio chamada MySQL Workbench, essa ferramenta facilita o acesso
+e a manutenção do banco de dados. Você pode instalar o MySQL Workbench nesse
 [link][mysql-workbench] e o próprio MySQL nesse [outro link][mysql-setup].
 
 Talvez você esteja usando a máquina do trabalho para aprender e não pode instalar
-aplicativos novos, ou seu computador é bem velhinho e te deixa com raiva quando 
-você tenta instalar alguma coisa. 
+aplicativos novos, ou seu computador é bem velhinho e te deixa com raiva quando
+você tenta instalar alguma coisa.
 Eu sei bem como é, não se preocupe, vou te ensinar como você pode ter um servidor
 de desenvolvimento e testes gratuito.
 
 ###Usando o MySQL sem instalar
 
 Com a evolução dos navegadores, da internet e da computação em nuvem não precisamos
-mais instalar aplicativos no nosso computador, um exemplo são os ambientes de 
+mais instalar aplicativos no nosso computador, um exemplo são os ambientes de
 desenvolvimento integrados *(IDE na sigla em inglês)*, vou assumir que você vai seguir
 os passos abaixo para o resto do artigo, mas se instalar o servidor na sua máquina e
 tiver alguma dúvida deixe um comentário que eu respondo te auxiliando.
 
-1. Vamos usar o [**CodeAnywhere**][codeanywhere-refer], uma IDE na nuvem muito poderosa 
+1. Vamos usar o [**CodeAnywhere**][codeanywhere-refer], uma IDE na nuvem muito poderosa
 e fácil de usar, crie sua conta gratuita para ter direito a uma *DevBox* (uma máquina virtual),
 caso queira criar mais *DevBox* você pode fazer uma assinatura.
 2. Depois da conta criada vamos criar uma *DevBox* genérica para nosso aprendizado:
@@ -101,15 +101,15 @@ Pronto! Sua *DevBox* está funcionando e com o MySQL já instalado.
 ![Primeiros Bancos]({{site.url}}/images/MySQL/MySQL-2.jpg)
 
 No início da computação todas as informações eram armazenadas em arquivos, e como
-os papeis impressos não estavam relacionados. 
+os papeis impressos não estavam relacionados.
 
-Tentando resolver esse problema surgiu o **Banco de Dados Hierárquico**, os dados 
+Tentando resolver esse problema surgiu o **Banco de Dados Hierárquico**, os dados
 ficavam relacionados em uma árvore, como uma estrutura de pastas que é usada até
 hoje no seu computador.
 
-Esse modelo permitia que uma informação tivesse apenas um relacionamento do tipo 
+Esse modelo permitia que uma informação tivesse apenas um relacionamento do tipo
 *pai - filho*, para evoluir surgiu o **Banco de Dados em Rede** que permitia que
-um registro tivesse mais de um *pai*. Isso resolveu alguns problemas, mas mesmo 
+um registro tivesse mais de um *pai*. Isso resolveu alguns problemas, mas mesmo
 assim esses modelos eram muito restritivos para os tipos de relacionamentos.
 
 
@@ -120,7 +120,7 @@ em conjunto com a ascenção da computação pessoal e a grande necessidade de a
 mais robustas e complexas para as empresas.
 
 O Modelo Relacional utiliza uma estrutura de **tabelas** e **chaves** que consegue imitar
-com maior fidelidade o mundo real, usando como fundamento alguns principios de 
+com maior fidelidade o mundo real, usando como fundamento alguns principios de
 matemática básica.
 
 
@@ -129,8 +129,8 @@ matemática básica.
 No ensino fundamental aprendemos sobre a Teoria dos Conjuntos, mas para entender como
 os bancos relacionais usam a teoria dos conjuntos vamos pensar em duas familias.
 Os *Capuletos* e os *Montecchios*, cada familia possui seus membros isolados, mas
-pode acontecer de uma Capuleto se casar com um Montecchio, se sua história não fosse 
-trágica provavelmente teriam filhos, esses filhos representariam uma união das duas 
+pode acontecer de uma Capuleto se casar com um Montecchio, se sua história não fosse
+trágica provavelmente teriam filhos, esses filhos representariam uma união das duas
 familias, criando um novo sub conjunto.
 
 Nos modelos relacionais você consegue trabalhar com cada *familia* individualmente ou
@@ -168,41 +168,41 @@ de dados. O mais importante é entender alguns conceitos:
 
 * Cada tabela representa uma **entidade** do mundo real;
 * Cada propriedade da entidade é representada por uma **coluna** na tabela;
-* Cada registro na tabela possui uma identificação exclusiva em um coluna do 
+* Cada registro na tabela possui uma identificação exclusiva em um coluna do
 tipo **chave primária**;
-* Um registro de uma tabela se relaciona com outro de outra tabela através de 
-uma coluna do tipo **chave estrangeira** que faz uma referência a chave primária 
+* Um registro de uma tabela se relaciona com outro de outra tabela através de
+uma coluna do tipo **chave estrangeira** que faz uma referência a chave primária
 da outra tabela.
-* As colunas possuem tipos de dados que definem como a informação dela é 
+* As colunas possuem tipos de dados que definem como a informação dela é
 armazenada, alguns dos tipos são:
     * _INT_: Um número inteiro comum (1, 2, 1000, etc.)
     * _FLOAT_: Um número de ponto flutuante comum (1,5, 100,59, etc.)
-    * _BIT_: Um valor único (bit), podemos usá-lo para definir coisas como 
+    * _BIT_: Um valor único (bit), podemos usá-lo para definir coisas como
 verdadeiro ou falso
     * _VARCHAR_: Um texto comum
     * _TIMESTAMP_: Uma representação de data e hora
 
 Vamos pensar no nosso banco de dados, possuímos duas entidades para nossa coleção:
 
-* __Album__: Onde vamos registrar todos os nossos albuns de figurinhas, pode 
+* __Album__: Onde vamos registrar todos os nossos albuns de figurinhas, pode
 possuir as seguintes propriedades:
     * __id__: A nossa chave primária, vai ser do tipo _INT_;
     * __nome__: O nome do album de figurinhas, do tipo _VARCHAR_;
-    * __ano__: O ano do album de figurinhas, afinal podemos colecionar um mesmo 
+    * __ano__: O ano do album de figurinhas, afinal podemos colecionar um mesmo
 album de vários anos diferentes, do tipo _INT_.
-* __Figurinha__: Onde vamos registrar todas as figurinhas do nsso album, pode 
+* __Figurinha__: Onde vamos registrar todas as figurinhas do nsso album, pode
 possuir essas propriedades:
     * __id__: A chave primária das figurinhas, também do tipo _INT_;
-    * __album_id__: Uma chave estrangeira que relaciona a figurinha com o seu 
+    * __album_id__: Uma chave estrangeira que relaciona a figurinha com o seu
 album, precisa ter o mesmo tipo da chave primária a que se refere, no caso _INT_;
     * __numero__: O número da figurinha no album, do tipo _INT_;
-    * __especial__: Alguns albuns possuem figurinhas especiais, podem ser as 
+    * __especial__: Alguns albuns possuem figurinhas especiais, podem ser as
 brilhantes ou que valem algum prêmio, vamos registrar isso nesse campo com o tipo _BIT_.
 
 
 ##Comandos *SQL* Básicos
 
-Para interagir com o banco de dados foi criada uma linguagem estruturada de 
+Para interagir com o banco de dados foi criada uma linguagem estruturada de
 consulta, o <abbr title="Structured Query Language">SQL</abbr>. É uma linguagem
 padronizada que pode ser usada em todos os bancos de dados relacionais, as vezes
 apenas com algumas particularidades do banco de dados escolhido.
@@ -217,8 +217,8 @@ três mais utilizados:
 
 ![Criando Estrutura]({{site.url}}/images/MySQL/MySQL-9.jpg)
 
-Para criar tabelas no MySQL usamos o comando `CREATE`, você pode usar o próprio 
-MySQL Workbench para fazer isso com a ajuda da interface gráfica. Mas se quiser 
+Para criar tabelas no MySQL usamos o comando `CREATE`, você pode usar o próprio
+MySQL Workbench para fazer isso com a ajuda da interface gráfica. Mas se quiser
 *botar a mão na massa* segue abaixo o comando SQL:
 
 {% highlight sql %}
@@ -243,7 +243,7 @@ CREATE TABLE figurinha (
 );
 {% endhighlight %}
 
-> Primeiro criamos um novo banco de dados chamado `album_de_figurinhas`, 
+> Primeiro criamos um novo banco de dados chamado `album_de_figurinhas`,
 selecionamos ele com o comando `USE` e depois criamos as nossas duas tabelas.
 
 
@@ -259,8 +259,8 @@ INSERT INTO nome_da_tabela (colunas) VALUES (valores);
 * `colunas`: Troque por uma lista das colunas que vai preencher
 * `valores`: Troque por uma lista dos valores que está inserindo
 
-No nosso exemplo vamos criar dois albuns e inserir algumas figurinhas neles (Os 
-números de figurinha que usei são aleatórios, mas se você tem algum dos albuns 
+No nosso exemplo vamos criar dois albuns e inserir algumas figurinhas neles (Os
+números de figurinha que usei são aleatórios, mas se você tem algum dos albuns
 do exemplo pode usar os números verdadeiros).
 
 {% highlight sql %}
@@ -279,8 +279,8 @@ INSERT INTO figurinha (album_id, numero, especial) VALUES (2, 78, FALSE);
 INSERT INTO figurinha (album_id, numero, especial) VALUES (NULL, 138, TRUE);
 {% endhighlight %}
 
-> Repare que na hora de inserir as figurinhas usamos os números 1 e 2 para a coluna 
-`album_id`, isso porque na hora que criamos a tabela album informamos que a coluna 
+> Repare que na hora de inserir as figurinhas usamos os números 1 e 2 para a coluna
+`album_id`, isso porque na hora que criamos a tabela album informamos que a coluna
 `id` deve ser incrementada automáticamente (`auto_increment`), assim o MySQL sozinho
 associa um número em sequência para os novos registros.
 
@@ -295,7 +295,7 @@ SELECT colunas FROM nome_da_tabela;
 SELECT colunas FROM nome_da_tabela WHERE condicao;
 {% endhighlight %}
 
-* `colunas`: Troque por uma lista das colunas que quer selecionar, ou use `*` 
+* `colunas`: Troque por uma lista das colunas que quer selecionar, ou use `*`
 para selecionar todas
 * `nome_da_tabela`: Troque pelo nome da tabela onde vai buscar os dados
 * `condicao`: Troque por uma condição de seleção, para filtrar os resultados
@@ -326,7 +326,7 @@ UPDATE nome_da_tabela SET coluna = valor WHERE condicao;
 * `nome_da_tabela`: Troque pelo nome da tabela onde vai buscar os dados
 * `coluna`: Troque pelo nome da coluna que vai atualizar
 * `valor`: Troque pelo novo valor para a coluna
-* `condicao`: Troque por uma condição de seleção, caso contrário todos os 
+* `condicao`: Troque por uma condição de seleção, caso contrário todos os
 registros serão atualizados
 
 Podemos alterar a figurinha número 1 para especial, por exemplo:
@@ -347,7 +347,7 @@ DELETE FROM nome_da_tabela WHERE condicao;
 {% endhighlight %}
 
 * `nome_da_tabela`: Troque pelo nome da tabela onde vai buscar os dados
-* `condicao`: Troque por uma condição de seleção, caso contrário todos os 
+* `condicao`: Troque por uma condição de seleção, caso contrário todos os
 registros da tabela serão excluídos
 
 Podemos remover a figurinha número 78:
@@ -416,39 +416,39 @@ SELECT * FROM figurinha ORDER BY numero;
 </figure>
 
 A maior vantagem dos bancos de dados relacionais é a capacidade de combinar várias
-tabelas relacionadas em uma única consulta, aqui aplicamos os conceitos da teoria 
+tabelas relacionadas em uma única consulta, aqui aplicamos os conceitos da teoria
 dos conjuntos que vimos a pouco, vamos entender a sintaxe:
 
 {% highlight sql %}
 SELECT colunas FROM nome_da_tabela JOIN nome_da_outra_tabela ON condicao_de_uniao;
 {% endhighlight %}
 
-* `colunas`: Como na seleção comum troque pelas colunas que quer selecionar, das 
+* `colunas`: Como na seleção comum troque pelas colunas que quer selecionar, das
 duas tabelas
 * `nome_da_tabela`: Troque pelo nome da primeira tabela na seleção
 * `nome_da_outra_tabela`: Troque pelo nome da segunda tabela na seleção
-* `condicao_de_uniao`: Troque pela condição de união das duas tabelas, que define 
+* `condicao_de_uniao`: Troque pela condição de união das duas tabelas, que define
 quando os registros combinam
 
 
 Existem três tipos de combinações que podemos fazer:
 
-* __INNER JOIN__: Selecionamos apenas o sub conjunto onde os registros combinam 
+* __INNER JOIN__: Selecionamos apenas o sub conjunto onde os registros combinam
 nas duas tabelas, no exemplo vamos combinar os albuns e figurinhas em uma consulta
 
 {% highlight sql %}
 SELECT * FROM album INNER JOIN figurinha ON figurinha.album_id = album.id;
 {% endhighlight %}
 
-* __LEFT JOIN__: Selecionamos todos os registros da primeira tabela e os que 
-combinam da segunda, por exemplo podemos selecionar todos os albuns e apenas as 
+* __LEFT JOIN__: Selecionamos todos os registros da primeira tabela e os que
+combinam da segunda, por exemplo podemos selecionar todos os albuns e apenas as
 figurinhas que combinam
 
 {% highlight sql %}
 SELECT * FROM album LEFT JOIN figurinha ON figurinha.album_id = album.id WHERE album.id = 1;
 {% endhighlight %}
 
-* __RIGHT JOIN__: Selecionamos todos os registros da segunda tabela e apenas os 
+* __RIGHT JOIN__: Selecionamos todos os registros da segunda tabela e apenas os
 que combinam da primeira, neste exemplo vamos selecionar todas as figurinhas e
 apenas os albuns que combinam
 
@@ -461,11 +461,11 @@ SELECT * FROM album RIGHT JOIN figurinha ON figurinha.album_id = album.id WHERE 
 
 ![Futuro]({{site.url}}/images/MySQL/MySQL-20.jpg)
 
-Atualmente existem outras alternativas para o modelo relacional com comandos SQL, 
+Atualmente existem outras alternativas para o modelo relacional com comandos SQL,
 é um modelo muito poderos mas ainda possui algumas restrições, principalmente para
 novos tipos de aplicações modernas que precisam de cada vez mais desempenho.
 
-Essas alternativas são conhecidas como bancos de dados não relacionais, ou **NoSQL**. 
+Essas alternativas são conhecidas como bancos de dados não relacionais, ou **NoSQL**.
 Em breve vou falar mais sobre esses novos bancos que já estão mudando o gerenciamento
 e armazenamento de dados, conheça alguns exemplos:
 
@@ -480,19 +480,19 @@ práticos usando o MySQL, foi apenas uma pincelada no imenso universo dos bancos
 de dados, você tem muito mais a explorar ainda, veja algumas referências para você
 continuar seu aprendizado:
 
-* [Centro do Desenvolvedor MySQL][dev-mysql]: O centro oficial do MySQL para 
+* [Centro do Desenvolvedor MySQL][dev-mysql]: O centro oficial do MySQL para
 desenvolvedores, possui uma documentação completa, fóruns para tirar dúvidas e
 ferramentas para desenvolver com MySQL
 * [MySQL - Guia do Programador (AD)][guia-mysql]: Esse guia traz exemplos práticos
-desde o mais básico até o mais avançado do MySQL, um livro para acompanhar a 
+desde o mais básico até o mais avançado do MySQL, um livro para acompanhar a
 carreira de um novo DBA.
 * [Curso Completo de MySQL][curso-mysql]: A Devmedia possui esse curso com aulas
 online e gratuitas para iniciantes no mundo dos bancos de dados.
 * Se ficou curioso veja mais sobre a [Teoria dos Conjuntos][teoria-conjuntos].
 
 Continue explorando e aprendendo, se ficou com alguma dúvida, se encontrou algum
-erro meu ou se quer apenas conversar deixe o seu comentário abaixo. Se gostou 
-compartilhe para os seus amigos e deixe o seu e-mail no formulário abaixo para 
+erro meu ou se quer apenas conversar deixe o seu comentário abaixo. Se gostou
+compartilhe para os seus amigos e deixe o seu e-mail no formulário abaixo para
 receber mais artigos sobre desenvolvimento, aprendizado e produtividade.
 
 Nos vemos em breve, um grande abraço!

@@ -15,7 +15,7 @@ image:
 date: 2015-05-13T19:25:04+00:00
 comments: true
 share: true
-published: true
+published: false
 ---
 
 
@@ -29,7 +29,7 @@ melhores resultados.
 Se não pôde participar do Devcamp veja agora uma transcrição da apresentação.
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/yXscwNp2ZETiQo"
-  width="560" height="430" frameborder="0" marginwidth="0" marginheight="0" 
+  width="560" height="430" frameborder="0" marginwidth="0" marginheight="0"
   scrolling="no"></iframe>
 
 <!-- Begin MailChimp Signup Form -->
@@ -59,7 +59,7 @@ Eu sou o Luiz, desenvolvedor no Corinthians, faço parte da equipe do CIFUT, o
 Centro de Inteligência do Futebol. A equipe é formada por seis analistas de
 desempenho, que acompanham e analisam muita informação sobre
 praticamente tudo no futebol, eles são realmente muito bons no que fazem,
-minha visão sobre o futebol mudou completamente e aposto que, se qualquer 
+minha visão sobre o futebol mudou completamente e aposto que, se qualquer
 torcedor comum parar para conversar 10 minutos com um deles, vai ver que futebol
 é muito mais complexo do que podemos imaginar. O meu trabalho lá é ajudar a
 simplificar a captura e o processamento das informações para gerar o
@@ -163,7 +163,7 @@ positivas.
 
 O penalti é um jogo muito simples, um jogador habilidoso é capaz de encontrar
 sozinho uma resposta para o problema apenas com algumas informações sobre o
-adversário. Porém, para a maioria dos casos precisamos de informação, muita 
+adversário. Porém, para a maioria dos casos precisamos de informação, muita
 informação, aí entra a Data Science.
 
 ![Data Science]({{site.url}}/images/ZerandoJogo/ZerandoJogo-26.jpg)
@@ -172,9 +172,9 @@ De forma genérica, a [Data Science][zerando-jogo-03], pode ser definida como a 
 conhecimento da informação, utilizando a metodologia científica. Engloba, além
 da tecnologia da informação, a matemática e a estatística.
 
-A Data Science existe a muito tempo e é usada em muitas áreas, por exemplo na 
-biologia para entender a evolução, na medicina para entender e prever epidemias 
-e atualmente no comércio para recomendar os produtos que você provavelmente vai 
+A Data Science existe a muito tempo e é usada em muitas áreas, por exemplo na
+biologia para entender a evolução, na medicina para entender e prever epidemias
+e atualmente no comércio para recomendar os produtos que você provavelmente vai
 gostar mais.
 
 ##O ciclo da Data Science
@@ -259,7 +259,7 @@ e pode ser detectada numa segunda, terceira ou milésima passada de olhos.
 
 ![Data Science no Corinthians]({{site.url}}/images/ZerandoJogo/ZerandoJogo-38.jpg)
 
-Agora vou mostrar um pouco de como funciona o Centro de Inteligência do Futebol 
+Agora vou mostrar um pouco de como funciona o Centro de Inteligência do Futebol
 (CIFUT). O jogo é muito mais do que os minutos entre o apito inicial e o final do
 jogo, cada um é um evento gigantesco com uma rotina exaustiva que começa muito
 antes do jogo e continua depois de ter terminado.
@@ -321,8 +321,8 @@ completa.
 ![Habilidades Data Science]({{site.url}}/images/ZerandoJogo/ZerandoJogo-53.jpg)
 
 Primeiro, a habilidade na ciência da computação, o que dá poder à Data Science é
-o uso inteligente dos recursos computacionais existentes, precisamos de alguém 
-capaz de transformar as hipóteses em modelos reproduzíveis e que consiga 
+o uso inteligente dos recursos computacionais existentes, precisamos de alguém
+capaz de transformar as hipóteses em modelos reproduzíveis e que consiga
 desenvolver formas de manipular grandes volumes de dados.
 
 Precisamos também de conhecimento específico na área de estudo, para conseguir
@@ -346,23 +346,23 @@ of data science*][zerando-jogo-04] publicado na The Berkeley Science Review.
 
 ##Como Aprender Mais?
 
-Quem se interessou por esse ramo, recomendo que se aprofunde, isso tende a ser 
+Quem se interessou por esse ramo, recomendo que se aprofunde, isso tende a ser
 uma área muito concorrida no futuro breve.
 
-Vou mostrar agora algumas formas para nós desenvolvedores nos aprofundarmos em 
+Vou mostrar agora algumas formas para nós desenvolvedores nos aprofundarmos em
 algumas áreas da Data Science
 
 ![Estatística]({{site.url}}/images/ZerandoJogo/ZerandoJogo-57.jpg)
 
 Primeiro estatística, talvez a área com o maior déficit para nós.
 
-* [Think Stats][zerando-jogo-05]: Esse livro de Allen Downey mostra como usar 
+* [Think Stats][zerando-jogo-05]: Esse livro de Allen Downey mostra como usar
 Python na estatística, ele está disponível gratuitamente para ler on-line ou
 também pode ser comprado na Amazon.
 * [Statistics, Making sense of Data][zerando-jogo-06]: Esse curso da Universidade
 de Toronto está disponível gratuitamente no Coursera, introduz a estatística com
 foco para programadores.
-* [R][zerando-jogo-07]: Essa é uma linguagem de programação projetada por 
+* [R][zerando-jogo-07]: Essa é uma linguagem de programação projetada por
 estatísticos, repleta de ferramentas e funcionalidades que ajudam na exploração
 de dados e em todos os aspectos da ciência de dados.
 
@@ -384,12 +384,12 @@ fiquem ligados aqui no meu site que em breve vou falar mais sobre Python e suas 
 
 ![Visualização]({{site.url}}/images/ZerandoJogo/ZerandoJogo-66.jpg)
 
-Eu acredito que todos programadores, matemáticos e humanos deveriam ter pelo 
+Eu acredito que todos programadores, matemáticos e humanos deveriam ter pelo
 menos um conhecimento básico nos conceitos de design, isso se prova na hora gerar
 uma visualização para os seus resultados.
 
 * [The Visual Display of Quantitative Information][zerando-jogo-11]: Esse livro
-de Edward Tufte ensina as melhores formas de apresentar visualmente dados 
+de Edward Tufte ensina as melhores formas de apresentar visualmente dados
 quantitativos, uma excelente leitura para aprender novas formas de fazer a
 informação chegar da melhor forma ao destino final.
 * [Data Visualization - *Stat645*][zerando-jogo-12]: A universidade do Rice
@@ -400,7 +400,7 @@ fantásticas e possui até um port para Python.
 
 ![Computação em Escala]({{site.url}}/images/ZerandoJogo/ZerandoJogo-70.jpg)
 
-A computação em nuvem permitiuque um pequeno investimento fosse suficiente para 
+A computação em nuvem permitiuque um pequeno investimento fosse suficiente para
 construir grandes redes computacionais, isso abriu as portas para o desenvolvimento
 de programas que rodam simultaneamente em vários computadores.
 
@@ -417,26 +417,26 @@ uso de todo o poder da computação em escala com muito mais agilidade e eficiê
 
 ![Zerar o jogo]({{site.url}}/images/ZerandoJogo/ZerandoJogo-72.jpg)
 
-Será que é possível zerar o futebol? Encontrar uma estratégia perfeita que vai 
+Será que é possível zerar o futebol? Encontrar uma estratégia perfeita que vai
 garantir a vitória em todos os jogos?
 
 Sim, nós do CIFUT acreditamos que é possível! Mas sabemos que é muito difícil.
-Não foi o caso da seleção da Austrália que fez 31 a 0 contra a Samoa Americana 
+Não foi o caso da seleção da Austrália que fez 31 a 0 contra a Samoa Americana
 ([saiba mais aqui][zerando-jogo-17]) nas eliminatórias da copa de 2002, isso foi
-uma combinação da habilidade da seleção australiana, da falta de habilidade da 
+uma combinação da habilidade da seleção australiana, da falta de habilidade da
 Samoa e do acaso que deu uma vantagem insuperável para os vencedores da partida.
 
 Existem obstáculos gigantescos que ainda nos impedem de zerar o jogo.
 
 ####Como saber se temos dados suficientes?
 
-Não temos como saber se os dados coletados são suficientes para nos permitir 
+Não temos como saber se os dados coletados são suficientes para nos permitir
 formar uma hipótese boa o suficiente. Talvez seja necessário coletar informações
 que nem sabemos que existem no mommento do jogo.
 
 ####Como saber se a pergunta feita vai dar a resposta que precisamos?
 
-E com as hipóteses que conseguirmos formar não podemos garantir também que o 
+E com as hipóteses que conseguirmos formar não podemos garantir também que o
 resultado produzido vai nos dar algum retorno real. Anos de estudo podem nos levar
 a mais questionamentos sobre o futebol com respostas não conclusivas.
 
@@ -446,7 +446,7 @@ a mais questionamentos sobre o futebol com respostas não conclusivas.
 > Não sei o que aconteceu ou se aconteceu não tô sabendo.
 > Mas futebol é isso que aconteceu, porque eu não sei o que aconteceu.
 
-Tudo isso porque o futebol é extremamente complexo e mutável, muito difícil de 
+Tudo isso porque o futebol é extremamente complexo e mutável, muito difícil de
 controlar e com uma cultura que descarta o uso da matemática aplicada.
 
 <figure class="third">
@@ -460,13 +460,13 @@ O cenário atual da Data Science no futebol tem um desequilíbrio bem nítido.
 Por um lado temos muito conhecimento específico nas comissões técnicas dos clubes
 no mundo inteiro.
 
-Existem várias empresas lucrando por usar tecnologias avançadas para entregar 
+Existem várias empresas lucrando por usar tecnologias avançadas para entregar
 informações sobre futebol, embora sejam informações básicas.
 
-O elo fraco está na inexistência de modelos matemáticos de qualidade, os modelos 
-que existem são muito básicos, são somas e subtrações se comparados com a 
-evolução dos modelos em outras modalidades esportivas e ramos da ciência. 
-Isso devido principalmente a grande variedade de tipos de evento dentro de um 
+O elo fraco está na inexistência de modelos matemáticos de qualidade, os modelos
+que existem são muito básicos, são somas e subtrações se comparados com a
+evolução dos modelos em outras modalidades esportivas e ramos da ciência.
+Isso devido principalmente a grande variedade de tipos de evento dentro de um
 jogo e na escassez desses eventos para analisar e testar.
 
 ##Uma Solução
@@ -475,9 +475,9 @@ jogo e na escassez desses eventos para analisar e testar.
 
 Existe uma solução para nos ajudar a zerar o jogo?
 
-Acredito que sim, podemos usar o poder da tecnologia para simular os eventos 
-raros e produzir modelos matemáticos mais confiáveis. Da mesma forma que os 
-cientistas constroem cenários artificiais para simular e estudar a colisão de 
+Acredito que sim, podemos usar o poder da tecnologia para simular os eventos
+raros e produzir modelos matemáticos mais confiáveis. Da mesma forma que os
+cientistas constroem cenários artificiais para simular e estudar a colisão de
 galáxias ou outros eventos extremamente raros.
 
 Não é uma tarefa simples, mas a equipe do CIFUT está cada dia mais preparada para
@@ -486,7 +486,7 @@ atingir esse objetivo.
 ##Concluindo
 
 Você viu nesse artigo uma transcrição da minha apresentação no Devcamp 2015, espero
-ter mostrado claramente como a teoria dos jogos e a Data Science podem ser usadas 
+ter mostrado claramente como a teoria dos jogos e a Data Science podem ser usadas
 para ajudar a entender eventos raros, também espero que as referências que apresentei
 aqui te ajudem na sua jornada de aprendizado, no final esse foi meu objetivo principal,
 quanto mais especialistas existirem na Data Science mais poderosa e acessível ela
